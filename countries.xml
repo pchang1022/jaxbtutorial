@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Countries>
+    <Country countryImportance="1">
+        <countryName>Spain</countryName>
+        <countryCaptial>Madrid</countryCaptial>
+        <countryFoundataion>1469-10-19</countryFoundataion>
+        <countryPopulation>450000000</countryPopulation>
+    </Country>
+    <Country countryImportance="0">
+        <countryName>USA</countryName>
+        <countryCaptial>Washington</countryCaptial>
+        <countryFoundataion>1776-07-04</countryFoundataion>
+        <continent>America</continent>
+        <countryPopulation>0</countryPopulation>
+    </Country>
+</Countries>

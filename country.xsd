@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="Country" type="CountryType"/>
+  <xs:complexType name="CountryType">
+    <xs:sequence>
+      <xs:element name="countryName" type="xs:string" minOccurs=’1’/>
+      <xs:element name="countryCaptial" type="xs:string" minOccurs=’1’/>
+      <xs:element type="xs:string" name="countryFoundataion" type="xs:string" minOccurs=’1’/>
+      <xs:element type="xs:string" name="countryPopulation"/>
+    </xs:sequence>
+    <xs:attribute type="xs:string" name="countryImportance"/>
+  </xs:complexType>
+</xs:schema>
