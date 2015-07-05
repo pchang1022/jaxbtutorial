@@ -7,8 +7,20 @@ public class City {
 
     private String name;
     private String zipCode;
-    private int population;
 
+
+
+    private float rainfall;
+
+    private int population;
+    private Climate climate;
+
+
+    public City (String name, String zipCode, int population) {
+        this.name = name;
+        this.zipCode = zipCode;
+        this.population = population;
+    }
     public String getName() {
         return name;
     }
@@ -32,6 +44,25 @@ public class City {
     public void setPopulation(int population) {
         this.population = population;
     }
+
+
+    public Climate getClimate() {
+        return climate;
+    }
+
+    public void setClimate(Climate climate) {
+        this.climate = climate;
+    }
+
+    public float getRainfall() {
+        return rainfall;
+    }
+
+    public void setRainfall(float rainfall) {
+        this.rainfall = rainfall;
+    }
+
+
 
     public String toString() {
         return name;
