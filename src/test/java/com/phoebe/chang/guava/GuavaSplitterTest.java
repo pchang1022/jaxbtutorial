@@ -65,10 +65,6 @@ public class GuavaSplitterTest {
         map.put("Porsche", "Stuttgart");
         map.put("Opel", "Rüsselsheim");
         map.put("Ford", "Köln");
-//
-//        String joined = Joiner.on(";").withKeyValueSeparator("=").join(map);
-//        String expected = "Audi=Neckarsulm;VW=Wolfsburg;Merzedes=Stuttgart;Porsche=Stuttgart;Opel=Rüsselsheim;Ford=Köln";
-//        assertThat(joined).isEqualTo(expected);
 
         String mapString = "Audi=Neckarsulm;VW=Wolfsburg;Merzedes=Stuttgart;Porsche=Stuttgart;Opel=Rüsselsheim;Ford=Köln";
         Splitter.MapSplitter splitter = Splitter.on(";").withKeyValueSeparator("=");
