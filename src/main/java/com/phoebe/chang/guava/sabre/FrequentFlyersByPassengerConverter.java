@@ -15,7 +15,7 @@ public final class FrequentFlyersByPassengerConverter {
     public static List<FrequentFlyersByLastName> convert(List<FrequentFlyersByPassenger> frequentFlyersByPassengerList) {
 
         List<FrequentFlyersByLastName> frequentFlyersByLastNames = new ArrayList<FrequentFlyersByLastName>();
-        if (frequentFlyersByPassengerList != null && frequentFlyersByPassengerList.size() == 0) {
+        if (frequentFlyersByPassengerList != null || frequentFlyersByPassengerList.size() == 0) {
             return frequentFlyersByLastNames;
         }
         Map<String, List<FrequentFlyersByPassenger>> ffnByLastNameMap = new LinkedHashMap<>();
@@ -42,4 +42,9 @@ public final class FrequentFlyersByPassengerConverter {
         ffnByPasList.add(frequentFlyerNumberList);
         ffnByLastNameMap.put(lastName, ffnByPasList);
     }
+
+
+
+
+
 }

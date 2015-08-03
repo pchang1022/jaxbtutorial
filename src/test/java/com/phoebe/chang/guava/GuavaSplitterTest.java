@@ -47,7 +47,9 @@ public class GuavaSplitterTest {
                 .omitEmptyStrings()
                 .trimResults();
         Iterable result = splitter.split(str);
-        String [] resultArrary = Iterables.toArray(result, String.class);
+        String[] resultArrary = (String[]) Iterables.toArray(result, String.class);
+
+        //String [] resultArrary = Iterables.toArray(result, String.class);
 
 
         assertThat(resultArrary.length).isEqualTo(4);

@@ -66,6 +66,12 @@ public class FunctionVsImperative {
         }
 
         System.out.println("Elapsed time in NANOSECONDS ==> " + stopwatch.elapsed(TimeUnit.NANOSECONDS));
+
+        System.out.println("test");
+
+
+
+
         return lengths;
     }
 
